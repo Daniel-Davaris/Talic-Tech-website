@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Talic Tech
+    </title>
+    <link rel="stylesheet" type="text/css" href="talictechcss.css" />
+</head>
+
+<body>
+    <nav class="fixednavbar">
+        <ul>
+            <li class="navbarlogo1"><img class="navbarlogo1" src="Images\logo1.jpg" /></li>
+            <li class="textnumber">
+                <h1>Talic Tech</h1>
+                <!--<li class="subtitle"><h1>Talic Tech</li>-->
+
+                <li class="one"><a href="talictech6.html">Comments</a></li>
+                <li class="one"><a href="talictech5.html">Contact Us</a></li>
+                <li class="one"><a href="talictech4.html">Case Studies </a></li>
+                <li class="one"><a href="talictech3.html">Why Choose Us?</a></li>
+                <li class="one"><a href="talictech2.html">About Us</a></li>
+                <li class="one"><a href="talictech1.html">Home</a></li>
+                <!--<li class="searchbar"><input type="text" name="search" placeholder="Search.."-->
+        </ul>
+    </nav>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="Images\image2.jpg" style="width:100%" height="535px">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="Images\image3.jpg" style="width:100%" height="535px">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="Images\image1.jpg" style="width:100%" height="535px">
+            <div class="text"></div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+</body>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }v bjknms0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+<div class="image">
+    <img src="Images\image5.jpg" style="width:100%" height="400px" />
+    <h2><span>Why Choose Us?</span></h2>
+    <p><span>Talic Tech Inc. provides unique, efficient and quality IT services for Companies, organisation and clients. Our foundations are built upon determination and persistence. Talic Tech works with young and creative individuals as well as experienced officials
+        to deliver quality software applications and services. Our IT services include; Web Development and applications both front end and back end, Android and IOS mobile applications, Cyber security systems for web security and data base as well as
+        management and custom software applications.</span> </p>
+</div>
+<div class="image2">
+    <img src="Images\image4.jpg" style="width:100%" height="400px" />
+    <h3><span>Vision Statement</span></h3>
+    <p><span>Our vision is to become one of Australia’s leading IT companies with global connection all over the world. We expect to branch into most field and areas and expand to have offices in Sydney with a well-managed and established team of Australia brightest employees, with unique opportunities for internship as Students transition from school to University with the expectation working for us after they have finished their degree. </span></p>
+</div>
+<div class="footer">
+    <h1>© Coppyright Talic Tech 2016</h1>
+    <h4>0420383948</h4>
+    <img class="footerimage" src="Images\image6.jpg" />
+    <img class="footerimage2" src="Images\image7.jpg" />
+    <img class="footerimage3" src="Images\image8.jpg" />
+</div>
+
+</html>
